@@ -1,4 +1,5 @@
 require_relative "talk"
+require_relative "track"
 class Sessions
   def initialize
     @array = Talk.list
@@ -122,8 +123,13 @@ class Sessions
       end
     end
     remove_over_talks_evening(@evening_talks1)
+    add_to_track("Track1",[@morning_talks1,@evening_talks1])
+    add_to_track("Track2",[@morning_talks2,@evening_talks2])
   end
   
+  def add_to_track(str, array)
+    Track.new(str, array).show_track
+  end
   
 end
 
