@@ -83,7 +83,6 @@ class Sessions
         end
       end
     end
-    
     remove_over_talks_evening(@evening_talks1)
   end
 
