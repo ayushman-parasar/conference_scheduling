@@ -26,7 +26,7 @@ class Talk
       time = item_array[item_array.length - 2]
       @array_hash << {item_array[0..-3].join(" ") => time}
     end
-    p @array_hash, "array_hash"
+    
     @array_hash
   end
 
