@@ -132,5 +132,3 @@ class Sessions
   end
   
 end
-
-Sessions.new.adding_programs
